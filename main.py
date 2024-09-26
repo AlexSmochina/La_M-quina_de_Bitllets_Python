@@ -1,16 +1,16 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from utils import comprobarEntero
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def menu():
+    print("Que billete quieres elejir?")
+    print("1 - Bitllet senzill")
+    print("2 - TCasual")
+    print("3 - TUsual")
+    print("4 - TFamiliar")
+    print("5 - TJove")
+
+    numero_billete = comprobarEntero("","Eso no es un numero valido",1,5,"El número debe estar entre 1 y 5.")
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+menu()
